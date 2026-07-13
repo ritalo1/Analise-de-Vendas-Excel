@@ -1,24 +1,26 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+Automação de Relatórios e Geração de Gráficos (Python & Excel)
 
-def criar_planilha_vendas():
-    dados = {
-        'Mês': ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
-        'Vendas (R$)': [12000, 15000, 18000, 16000, 21000, 24000, 8000, 25000, 21000, 20000, 19500, 18750]
-    }
-    df = pd.DataFrame(dados)
-    df.to_excel('relatorio_vendas.xlsx', index=False)
-    print("📊 Gráfico 'relatorio_vendas.xlsx' gerado com sucesso.")
+Este projeto demonstra a integração prática entre Python e Excel para automatizar tarefas comuns de análise de dados. O script cria uma planilha de vendas do zero, exporta os dados para um arquivo real do Excel (`.xlsx`) e, em seguida, consome esse arquivo para gerar um gráfico de barras altamente legível e estilizado.
 
+Tecnologias Urilizadas
+Python 3
+Pandas: Para a criação, manipulação e exportação da tabela de dados de forma estruturada.
+Matplotlib: Para a plotagem e customização visual do gráfico de faturamento mensal.
+OpenPyXL: Engine utilizada em segundo plano para gravação de arquivos Excel.
 
-def analisar_dados():
-    # Lendo a planilha
-    df = pd.read_excel('relatorio_vendas.xlsx')
-    
-    total_vendas = df['Vendas (R$)'].sum()
-    media_mensal = df['Vendas (R$)'].mean()
-    melhor_mes = df.loc[df['Vendas (R$)'].idxmax()]['Mês']
-    maior_valor = df['Vendas (R$)'].max()
+Como o Projeto Funciona?
+1. Geração de Dados: O script simula uma tabela com o faturamento mensal de Janeiro a Dezembro.
+2. Exportação para Excel: Os dados são estruturados em um DataFrame do Pandas e salvos automaticamente no arquivo `relatorio_vendas.xlsx`.
+3. Análise Visual: O Python lê a planilha gerada e desenha um gráfico de barras customizado (utilizando a paleta de cores `darkgreen` e tamanho otimizado de tela) para facilitar a tomada de decisão.
+
+Como Executar?
+
+Você pode rodar este projeto localmente ou diretamente no Google Colab:
+
+1. Copie o código presente no arquivo `main.py` deste repositório.
+2. Certifique-se de ter as bibliotecas instaladas executando:
+   ```bash
+   pip install pandas matplotlib openpyxl    maior_valor = df['Vendas (R$)'].max()
     
     print("\n--- RELATÓRIO DE NEGÓCIOS ---")
     print(f"Faturamento Total Anual: R$ {total_vendas:,.2f}")
