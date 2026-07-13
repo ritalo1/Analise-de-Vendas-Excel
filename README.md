@@ -5,7 +5,9 @@ Este projeto demonstra a integração prática entre Python e Excel para automat
 Quais foram as Tecnologias Utilizadas?
 Python 3
 Pandas: Para a criação, manipulação e exportação da tabela de dados de forma estruturada.
+
 Matplotlib: Para a plotagem e customização visual do gráfico de faturamento mensal.
+
 OpenPyXL: Engine utilizada em segundo plano para gravação de arquivos Excel.
 
 Como o Projeto Funciona?
