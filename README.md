@@ -31,8 +31,9 @@ Você pode rodar este projeto localmente ou diretamente no Google Colab:
     print("-----------------------------\n")
     
     return df
-
+   
 def gerar_grafico(df):
+
     plt.figure(figsize=(15, 8))
     plt.bar(df['Mês'], df['Vendas (R$)'], color='darkgreen', edgecolor='black')
 
