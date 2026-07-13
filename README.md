@@ -1,8 +1,8 @@
-Automação de Relatórios e Geração de Gráficos (Python & Excel)
+Automação de Relatórios e Geração de Gráficos (Python & Excel).
 
 Este projeto demonstra a integração prática entre Python e Excel para automatizar tarefas comuns de análise de dados. O script cria uma planilha de vendas do zero, exporta os dados para um arquivo real do Excel (`.xlsx`) e, em seguida, consome esse arquivo para gerar um gráfico de barras altamente legível e estilizado.
 
-Tecnologias Urilizadas
+Quais foram as Tecnologias Utilizadas?
 Python 3
 Pandas: Para a criação, manipulação e exportação da tabela de dados de forma estruturada.
 Matplotlib: Para a plotagem e customização visual do gráfico de faturamento mensal.
